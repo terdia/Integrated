@@ -15,8 +15,9 @@ use InvalidArgumentException;
 use WebDriver\WebDriver;
 use WebDriver\Element;
 use WebDriver\Session;
+use PHPUnit\Framework\TestCase;
 
-abstract class Selenium extends \PHPUnit_Framework_TestCase implements Emulator, JavaScriptAwareEmulator
+abstract class Selenium extends TestCase implements Emulator, JavaScriptAwareEmulator
 {
     use IntegrationTrait, WorksWithDatabase;
 
